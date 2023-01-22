@@ -4,8 +4,8 @@ import Feed from '../components/Feed'
 import Sidebar from '../components/Sidebar'
 import Widgets from '../components/Widgets'
 import { Tweet } from '../typings'
-
 import { fetchTweets } from "../utils/fetchTweets"
+import toast, { Toaster } from "react-hot-toast"
 
 //import Image from 'next/image'
 
@@ -22,11 +22,12 @@ const Home = ({ tweets }: Props) => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Toaster />
 
       <main className='grid grid-cols-9'>
         <Sidebar />
 
-        <Feed />
+        <Feed tweets={tweets}/>
 
         <Widgets />
       </main>
