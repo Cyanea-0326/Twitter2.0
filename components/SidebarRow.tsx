@@ -1,7 +1,7 @@
 import React, { SVGProps } from 'react'
 
 interface Props {
-    Icon: (props: SVGProps<SVGSVGAElement>) => JSX.Element
+    Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element
     title: string
     onClick?: () => {}
 }
