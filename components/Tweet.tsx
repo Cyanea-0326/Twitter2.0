@@ -49,7 +49,7 @@ function Tweet({ tweet }: Props) {
                 @{tweet.username.replace(/\s+/g, '').toLowerCase()}
             </p>
 
-        <!-- <TimeAgo className="text-sm text-gray-500" data={tweet._createdAt} /> -->
+            {/* <TimeAgo className="text-sm text-gray-500" data={tweet._createdAt} /> */}
         </div>
 
         <p className="pt-1">{tweet.text}</p>
